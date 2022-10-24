@@ -6,10 +6,4 @@
     padding: 10px 20px;
     border-radius: 5px;
     clear: both;
-
-    &.me{
-        color: #000;
-        float: right;
-        background-color: beige;
-    }
 }

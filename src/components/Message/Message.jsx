@@ -1,12 +1,8 @@
-import React, {Component} from 'react';
-import './Message.scss';
+import React, { useState } from 'react';
+import './Message.css';
 
 function Message(props) {
-    // Can be a bug
-    const [message, setMessage] = useState({});
-
-    let temp = JSON.parse(this.props.message);
-    setMessage(temp);
+    const [message] = useState(JSON.parse(props.message));
 
     return (  
         <div className='Message'>

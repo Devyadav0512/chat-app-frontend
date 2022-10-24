@@ -1,10 +1,10 @@
 import React from 'react';
-import './ChatInput.scss';
+import './ChatInput.css';
 
-function ChatInput() {
+function ChatInput(props) {
     return (  
         <div className='ChatInput'>
-        <input onKeyDown={this.props.send} placeholder='Type a message... Hit Enter to send' /> 
+        <input onKeyDown={props.send} placeholder='Type a message... Hit Enter to send' /> 
         </div>  
     );  
 } 
